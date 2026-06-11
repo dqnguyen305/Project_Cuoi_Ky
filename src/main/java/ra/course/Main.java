@@ -1,10 +1,10 @@
 package ra.course;
 
-import ra.course.presentation.StudentView;
+import ra.course.presentation.MainView;
 
 public class Main {
     public static void main(String[] args) {
-        StudentView studentView = new StudentView();
-        studentView.showMainMenu();
+        MainView mainView = new MainView();
+        mainView.showMainMenu();
     }
 }

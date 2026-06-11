@@ -5,7 +5,6 @@ import java.util.List;
 
 public interface IStudentDAO {
     Student loginStudent(String email, String password);
-
     List<Student> getAllStudents(String sortBy, String direction);
     boolean addStudent(Student student);
     boolean updateStudentField(int studentId, String fieldName, Object value);

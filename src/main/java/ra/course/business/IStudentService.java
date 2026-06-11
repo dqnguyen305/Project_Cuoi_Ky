@@ -10,5 +10,8 @@ public interface IStudentService {
     boolean updateStudentField(int studentId, String fieldName, Object value);
     boolean deleteStudent(int studentId);
     List<Student> searchStudent(String keyword);
-    boolean changePassword(int studentId, String newPassword);
+    boolean changePassword(int id, String oldPassword, String emailOrPhone, String newPassword);
+    boolean registerCourse(int studentId, int courseId);
+    void displayRegisteredCourses(int studentId, String criteria, String direction);
+    boolean cancelRegistration(int studentId, int courseId);
 }
